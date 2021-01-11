@@ -41,7 +41,7 @@ class ForegroundService : Service() {
 
         //Se define la notificación
         val notification = NotificationCompat.Builder(this, channelId)
-            .setContentTitle("Ejemplo de Servicio en Primer Plano")
+            .setContentTitle("Desafío Servicio en Primer Plano")
             .setContentText(input)
             .setSmallIcon(R.drawable.ic_message)
             .setContentIntent(pendingIntent)
@@ -56,9 +56,10 @@ class ForegroundService : Service() {
 
     //Se crea la notificación
     private fun createNotificationChannel() {
-        //Se valida la version del SDK para uso del Canal de Notificación (Android O o superior)
+        //Se valida la version del SDK para uso del Canal de Notificación (Android "O" o superior)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val serviceChannel = NotificationChannel(channelId,
+            val serviceChannel = NotificationChannel(
+                    channelId,
                 "Canal de Servicio en Primer Plano",
                 NotificationManager.IMPORTANCE_DEFAULT)
 

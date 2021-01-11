@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonStart.setOnClickListener(View.OnClickListener {
-            ForegroundService.startService(this, "Servicio en Primer Plano Ejecutándose...")
+            ForegroundService.startService(this, "Servicio en ejecución...")
         })
 
         binding.buttonStop.setOnClickListener(View.OnClickListener {

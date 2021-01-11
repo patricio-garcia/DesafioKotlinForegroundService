@@ -43,7 +43,7 @@ class ForegroundService : Service() {
         val notification = NotificationCompat.Builder(this, channelId)
             .setContentTitle("Ejemplo de Servicio en Primer Plano")
             .setContentText(input)
-            .setSmallIcon(R.drawable.ic_notification)
+            .setSmallIcon(R.drawable.ic_message)
             .setContentIntent(pendingIntent)
             .build()
         startForeground(1, notification)

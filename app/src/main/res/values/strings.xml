@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DesafioKotlinForegroundService</string>
+    <string name="btn_start">Iniciar</string>
+</resources>
